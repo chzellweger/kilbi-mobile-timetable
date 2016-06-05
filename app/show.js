@@ -12,7 +12,7 @@ function Show(props) {
       <div className='show-time'>{props.showData.time}</div>
       <div className='show-name band'>{props.showData.name}</div>
       </div>
-      )
+    );
   } else {
     return (
       <div className='show'>
@@ -21,9 +21,8 @@ function Show(props) {
       <div className='show-name band'>{props.showData.name}</div>
       <div className='show-stage'>{props.showData.stage}</div>
       </div>
-      )
+    );
   }
-  
 }
 
 Show.propTypes = propTypes;

@@ -17,7 +17,7 @@ function Button(props) {
       onClick={props.clicked}>
       {literalDay}
     </button>
-    )
+  );
 }
 
 Button.propTypes = propTypes;

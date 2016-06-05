@@ -10,23 +10,23 @@ const propTypes = {
   data: React.PropTypes.object.isRequired
 };
 
-function Portrait(props)  {
+function Portrait(props) {
   let selected = jsonQuery(`shows[*day=${props.day}]`, {
-		data: props.data
-	});
+    data: props.data
+  });
 
-	return (
-		<div className='app'>
-		  <DayChooser
+  return (
+    <div className='app'>
+      <DayChooser
         setDay={props.setDay}
         items={['do','fr','sa']}
       />
-		  <Day
+      <Day
         day={props.day}
         data={selected.value}
       />
 		</div>
-		)
+  );
 }
 
 Portrait.propTypes = propTypes;

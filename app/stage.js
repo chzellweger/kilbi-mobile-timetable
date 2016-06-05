@@ -21,16 +21,18 @@ function Stage(props) {
       showData={selected.value[key]}
       insideStage
     />
-  ));
+    )
+  );
 
   return (
-  <div className={`stage ${props.stage}`} >
-  <div className='stage-name'>{props.stage}</div>
-  <div>{children}</div>
-  </div>
-  )
+    <div className={`stage ${props.stage}`} >
+      <div className='stage-name'>{props.stage}</div>
+      <div>{children}</div>
+    </div>
+  );
 }
 
 Stage.propTypes = propTypes
 
 export default Stage;
+

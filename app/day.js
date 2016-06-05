@@ -17,7 +17,7 @@ function Day(props) {
         data={props.data}
       />
     </div>
-    )
+  );
 }
 
 Day.propTypes = propTypes
