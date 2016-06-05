@@ -40,7 +40,6 @@
   },
   "dependencies": {
     "json-query": "^2.1.0",
-    "jsonq": "^1.0.3",
     "react": "^15.0.1",
     "react-dom": "^15.0.1"
   }

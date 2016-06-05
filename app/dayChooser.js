@@ -7,7 +7,7 @@ const propTypes = {
 };
 
 function DayChooser(props) {
-  let clicked = props.setDay
+  let clicked = props.setDay;
   let children = props.items.map(key => (
     <Button
       key={key}

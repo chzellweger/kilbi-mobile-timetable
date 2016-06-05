@@ -21,13 +21,9 @@ constructor(props){
   }
 
   componentWillMount(){
-    // set day to today
     let day = getDay();
-
-     //parse Data
     let data = JSON.parse(Data);
 
-    //set states
     this.setState({
       data: data,
       day: day,
@@ -35,31 +31,20 @@ constructor(props){
   }
 
   componentDidMount() {
-    let mql = window.matchMedia('(orientation: portrait)');
+    let mediaQueryList = window.matchMedia('(orientation: portrait)');
     
     // If there are matches, we're in portrait
-    if (mql.matches) {
-      // Portrait orientation
-      this.state.orientation = 'portrait'  
+    if (mediaQueryList.matches) {
       this.setState({orientation: 'portrait'})
-    } else {  
-      // Landscape orientation
-      this.state.orientation = 'landscape'  
+    } else {
       this.setState({orientation: 'landscape'})
     }
-    
+
     // Add a media query change listener
     let setter = this.setOrientation;
-    mql.addListener((m) => {
-      if(m.matches) {
 
-        // Changed to portrait
-        setter('portrait')
-        } else {
-        
-        // Changed to landscape
-        setter('landscape')
-        }
+    mediaQueryList.addListener((mediaQuery) => {
+      mediaQuery.matches ? setter('portrait') : setter('landscape')
     });
   }
 
@@ -70,7 +55,6 @@ constructor(props){
   setDay (e) {
     console.log(e.target.dataset.day)
     let day = e.target.dataset.day
-    this.state.day = day
     this.setState({'day': day})
   }
 
