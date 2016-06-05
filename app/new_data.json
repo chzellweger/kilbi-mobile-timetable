@@ -1,0 +1,310 @@
+{
+    "shows":[
+        {
+            "day":"do",
+            "name":"Knöppel",
+            "time":"15.30",
+            "stage":"Haus"
+        },
+        {
+            "day":"do",
+            "name":"Föllakzoid",
+            "time":"16.00",
+            "stage":"B-Stage"
+        },
+        {
+            "day":"do",
+            "name":"s s s s",
+            "time":"17.00",
+            "stage":"Main-Stage"
+        },
+        {
+            "day":"do",
+            "name":"Papaya Fuzz",
+            "time":"17.30",
+            "stage":"Haus"
+        },
+        {
+            "day":"do",
+            "name":"Stanley Brinks",
+            "time":"17.45",
+            "stage":"B-Stage"
+        },
+        {
+            "day":"do",
+            "name":"Ogoya Nengo",
+            "time":"19.00",
+            "stage":"Main-Stage"
+        },
+        {
+            "day":"do",
+            "name":"Horizon Liquide",
+            "time":"19.30",
+            "stage":"Haus"
+        },
+        {
+            "day":"do",
+            "name":"Julia Holter",
+            "time":"20.00",
+            "stage":"B-Stage"
+        },
+        {
+            "day":"do",
+            "name":"Boredoms",
+            "time":"21.00",
+            "stage":"Main-Stage"
+        },
+        {
+            "day":"do",
+            "name":"Gaia",
+            "time":"21.30",
+            "stage":"Haus"
+        },
+        {
+            "day":"do",
+            "name":"Pyrit",
+            "time":"22.15",
+            "stage":"B-Stage"
+        },
+        {
+            "day":"do",
+            "name":"Ty Segall",
+            "time":"23.15",
+            "stage":"Main-Stage"
+        },
+        {
+            "day":"do",
+            "name":"Zaperlipopette",
+            "time":"23.30",
+            "stage":"Haus"
+        },
+        {
+            "day":"do",
+            "name":"Insanlar",
+            "time":"00.30",
+            "stage":"B-Stage"
+        },
+        {
+            "day":"do",
+            "name":"DJ Fett",
+            "time":"01.00",
+            "stage":"Haus"
+        },
+        {
+            "day":"do",
+            "name":"Feldermelder",
+            "time":"01.45",
+            "stage":"Main-Stage"
+        },
+        {
+            "day":"fr",
+            "name":"La Tene",
+            "time":"15.30",
+            "stage":"Haus"
+        },
+        {
+            "day":"fr",
+            "name":"Silver Firs",
+            "time":"16.00",
+            "stage":"Main-Stage"
+        },
+        {
+            "day":"fr",
+            "name":"Sauna Youth",
+            "time":"16.45",
+            "stage":"B-Stage"
+        },
+        {
+            "day":"fr",
+            "name":"The Homesick",
+            "time":"17.15",
+            "stage":"Haus"
+        },
+        {
+            "day":"fr",
+            "name":"Cate Le Bon",
+            "time":"17.30",
+            "stage":"Main-Stage"
+        },
+        {
+            "day":"fr",
+            "name":"Jenny Hval",
+            "time":"18.30",
+            "stage":"B-Stage"
+        },
+        {
+            "day":"fr",
+            "name":"Parquet Cours",
+            "time":"19.15",
+            "stage":"Main-Stage"
+        },
+        {
+            "day":"fr",
+            "name":"Axel FLovent",
+            "time":"19.30",
+            "stage":"Haus"
+        },
+        {
+            "day":"fr",
+            "name":"Pissed Jeans",
+            "time":"20.15",
+            "stage":"B-Stage"
+        },
+        {
+            "day":"fr",
+            "name":"Isolated Lines",
+            "time":"20.45",
+            "stage":"Haus"
+        },
+        {
+            "day":"fr",
+            "name":"Floating Points",
+            "time":"21.15",
+            "stage":"Main-Stage"
+        },
+        {
+            "day":"fr",
+            "name":"Fat White Family",
+            "time":"22.30",
+            "stage":"B-Stage"
+        },
+        {
+            "day":"fr",
+            "name":"Lotic",
+            "time":"22.30",
+            "stage":"Haus"
+        },
+        {
+            "day":"fr",
+            "name":"Minor Victories",
+            "time":"23.30",
+            "stage":"Main-Stage"
+        },
+        {
+            "day":"fr",
+            "name":"A Love From Outer Space",
+            "time":"00.00",
+            "stage":"Haus"
+        },
+        {
+            "day":"fr",
+            "name":"No Zu",
+            "time":"00.45",
+            "stage":"B-Stage"
+        },
+        {
+            "day":"fr",
+            "name":"Powell",
+            "time":"01.45",
+            "stage":"Main-Stage"
+        },
+        {
+            "day":"sa",
+            "name":"Manuel Troller",
+            "time":"15.00",
+            "stage":"Main-Stage"
+        },
+        {
+            "day":"sa",
+            "name":"Odd Beholder",
+            "time":"15.30",
+            "stage":"Haus"
+        },
+        {
+            "day":"sa",
+            "name":"Metz",
+            "time":"15.45",
+            "stage":"B-Stage"
+        },
+        {
+            "day":"sa",
+            "name":"Car Seat Headrest",
+            "time":"16.45",
+            "stage":"Main-Stage"
+        },
+        {
+            "day":"sa",
+            "name":"Augenwasser",
+            "time":"17.15",
+            "stage":"Haus"
+        },
+        {
+            "day":"sa",
+            "name":"Beach Slang",
+            "time":"17.30",
+            "stage":"B-Stage"
+        },
+        {
+            "day":"sa",
+            "name":"Protomartyr",
+            "time":"18.30",
+            "stage":"Main-Stage"
+        },
+        {
+            "day":"sa",
+            "name":"Sister Iodine",
+            "time":"19.00",
+            "stage":"Haus"
+        },
+        {
+            "day":"sa",
+            "name":"Cakes Da Killa",
+            "time":"19.30",
+            "stage":"B-Stage"
+        },
+        {
+            "day":"sa",
+            "name":"Kamasi Washington",
+            "time":"20.30",
+            "stage":"Main-Stage"
+        },
+        {
+            "day":"sa",
+            "name":"Dieb13",
+            "time":"21.00",
+            "stage":"Haus"
+        },
+        {
+            "day":"sa",
+            "name":"Ata Kak",
+            "time":"21.45",
+            "stage":"B-Stage"
+        },
+        {
+            "day":"sa",
+            "name":"Dollkraut",
+            "time":"22.45",
+            "stage":"Haus"
+        },
+        {
+            "day":"sa",
+            "name":"Savages",
+            "time":"23.00",
+            "stage":"Main-Stage"
+        },
+        {
+            "day":"sa",
+            "name":"Ninos Do Brasil",
+            "time":"23.00",
+            "stage":"B-Stage"
+        },
+        {
+            "day":"sa",
+            "name":"Container",
+            "time":"00.30",
+            "stage":"Haus"
+        },
+        {
+            "day":"sa",
+            "name":"Ash Ra Tempel Exp",
+            "time":"01.15",
+            "stage":"Main-Stage"
+        },
+        {
+            "day":"sa",
+            "name":"DJ Marcelle",
+            "time":"01.30",
+            "stage":"Haus"
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+body {
+  background: cornsilk;
+  font-family: sans-serif;
+  }
+
+#root, .template-content, .component {
+  min-width: 414px;
+  max-width: 665px;
+}
+
+button {
+  font-weight: bold;
+  font-size: 120%;
+  }
+
+.app {
+  width: 100%;
+}
+
+.band {
+  font-size: 20px;
+}
+
+.show {
+  margin-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.do {
+  background-color: #547369;
+  color: white;
+}
+
+.fr {
+  background-color: #fc9833;
+}
+
+.sa {
+  background-color: #6e5d4a;
+  color: white;
+}
+
+.stage {
+  padding-top: 10px;
+  padding-left: 5px;
+  float: left;
+}
+
+.Main-Stage {
+  background-color: #f89848;
+  color: black;
+}
+
+.Haus {
+  background-color: #ffffff;
+  color: black;
+}
+
+.B-Stage {
+  background-color: #fdc99b;
+  color: black; 
+}
