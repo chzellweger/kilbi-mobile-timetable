@@ -10,7 +10,7 @@ const propTypes = {
   day: React.PropTypes.string.isRequired,
   stages: React.PropTypes.array.isRequired,
   setDay: React.PropTypes.func.isRequired,
-  data: React.PropTypes.object.isRequired,
+  data: React.PropTypes.object.isRequired
 }
 
 function Landscape(props) {
@@ -30,17 +30,20 @@ function Landscape(props) {
 
     return (
         <div className='app'>
-          <DayChooser setDay={props.setDay} items={['do','fr','sa']}/>
+          <DayChooser
+            setDay={props.setDay}
+            items={['do','fr','sa']}
+          />
           <div className={props.day}>
             <div className='stages'>
               <div className={props.day}>{literalDay}</div>
-                <div>{children}</div>
+              <div>{children}</div>
             </div>
           </div>
         </div>
         )
   }
 
-Landscape.propTypes = propTypes
+Landscape.propTypes = propTypes;
 
 export default Landscape

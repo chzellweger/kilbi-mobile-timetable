@@ -3,8 +3,8 @@ import Show from './show'
 
 const propTypes = {
   day: React.PropTypes.string.isRequired,
-  data: React.PropTypes.array.isRequired,
-}
+  data: React.PropTypes.array.isRequired
+};
 
 function Shows(props) {
   let keys = Object.keys(props.data);

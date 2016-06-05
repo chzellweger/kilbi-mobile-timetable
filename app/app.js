@@ -11,11 +11,13 @@ import Data from './new_data'
 export default class App extends Component {
 constructor(props){
     super(props);
+
     this.state = {
       day: 'do',
       orientation: 'portrait',
-      data: {},
+      data: {}
     };
+
     this.setDay = this.setDay.bind(this);
     this.setOrientation = this.setOrientation.bind(this);
   }
@@ -26,7 +28,7 @@ constructor(props){
 
     this.setState({
       data: data,
-      day: day,
+      day: day
     })
   }
 
@@ -49,30 +51,32 @@ constructor(props){
   }
 
   setOrientation(value){
-    this.setState({'orientation': value})
+    this.setState({'orientation': value});
   }
 
   setDay (e) {
-    console.log(e.target.dataset.day)
-    let day = e.target.dataset.day
-    this.setState({'day': day})
+    console.log(e.target.dataset.day);
+    let day = e.target.dataset.day;
+    
+    this.setState({'day': day});
   }
 
   render () {
     let renderOrientationView;
+
     if (this.state.orientation === 'portrait'){
       renderOrientationView = 
         <Portrait
-          day = {this.state.day}
-          setDay = {this.setDay}
+          day={this.state.day}
+          setDay={this.setDay}
           data={this.state.data}
         />
     } else {
       renderOrientationView =
         <Landscape 
-          day = {this.state.day}
+          day={this.state.day}
           stages={['Main-Stage','B-Stage','Haus']}
-          setDay = {this.setDay}
+          setDay={this.setDay}
           data={this.state.data}
         />
     }

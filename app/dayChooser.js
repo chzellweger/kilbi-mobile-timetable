@@ -3,7 +3,7 @@ import Button from './button'
 
 const propTypes = {
   setDay: React.PropTypes.func.isRequired,
-  items: React.PropTypes.array.isRequired,
+  items: React.PropTypes.array.isRequired
 };
 
 function DayChooser(props) {
@@ -15,11 +15,11 @@ function DayChooser(props) {
       className='button'
       clicked={clicked}
     />
-  ))
+  ));
 
   return <div>{children}</div>
 }
 
-DayChooser.propTypes = propTypes
+DayChooser.propTypes = propTypes;
 
 export default DayChooser

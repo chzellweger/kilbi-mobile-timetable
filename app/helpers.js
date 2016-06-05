@@ -13,8 +13,8 @@ function getLiteralDay(day) {
 }
 
 function getDay() {
-  let date = new Date()
-  let day = date.getDay()
+  let date = new Date();
+  let day = date.getDay();
   
   if (day === 5){
     return 'fr'

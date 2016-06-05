@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 
 const propTypes = {
   showData: React.PropTypes.object.isRequired
-}
+};
 
 function Show(props) {
-  if (props.insideStage){
+  if (props.insideStage) {
     return (
       <div className='show'>
       <div className='show-decorator'>*-*-*-*</div>
@@ -26,6 +26,6 @@ function Show(props) {
   
 }
 
-Show.propTypes = propTypes
+Show.propTypes = propTypes;
 
 export default Show;
