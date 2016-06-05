@@ -25,7 +25,7 @@ function Portrait(props) {
         day={props.day}
         data={selected.value}
       />
-		</div>
+    </div>
   );
 }
 
