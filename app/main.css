@@ -5,13 +5,18 @@ body {
 
 button {
   font-weight: bold;
-  font-size: 120%;
+  font-size: 114%;
+  width: 33%;
   }
 
 .app {
   width: 100%;
 }
 
+.day-name {
+  padding: 4px 0 4px 4px;
+  width: 98%;
+}
 .stages {
   width: 100%;
   margin-left: 2px;
