@@ -17,7 +17,7 @@ function DayChooser(props) {
     />
   ));
 
-  return <div>{children}</div>
+  return <div className="buttons">{children}</div>
 }
 
 DayChooser.propTypes = propTypes;

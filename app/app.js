@@ -81,6 +81,6 @@ constructor(props){
         />
     }
 
-    return renderOrientationView;
+    return <div className="app">{renderOrientationView}</div>
   }
 };

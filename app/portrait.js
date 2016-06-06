@@ -16,7 +16,7 @@ function Portrait(props) {
   });
 
   return (
-    <div className='app'>
+    <div className="portrait">
       <DayChooser
         setDay={props.setDay}
         items={['do','fr','sa']}

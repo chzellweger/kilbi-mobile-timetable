@@ -29,14 +29,14 @@ function Landscape(props) {
       ));
 
   return (
-    <div className='app'>
+    <div className="landscape">
       <DayChooser
         setDay={props.setDay}
         items={['do','fr','sa']}
         />
-        <div className={props.day}>
+        <div>
           <div className='stages'>
-            <div className={props.day}>{literalDay}</div>
+            <div className={`day-name ${props.day}`}>{literalDay}</div>
             <div>{children}</div>
           </div>
         </div>

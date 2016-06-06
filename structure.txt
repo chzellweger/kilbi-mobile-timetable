@@ -8,6 +8,7 @@ index ./index.js
   App ./app.js
     Landscape ./landscape.js
       DayChooser ./dayChooser.js
+        Button ./button.js
       Stages ./stages.js
         Stage
           Show ./show.js
