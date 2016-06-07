@@ -29,7 +29,7 @@ const common = {
     path: PATHS.build,
     filename: '[name].js'
   },
-  
+ 
 module: {
   loaders: [
     {
