@@ -3,10 +3,16 @@ body {
   font-family: sans-serif;
   }
 
+.buttons {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+}
+
 button {
   font-weight: bold;
   font-size: 114%;
-  width: 33%;
+  flex-grow: 1;
 }
 
 .app {
@@ -14,19 +20,20 @@ button {
 }
 
 .day-name {
-  padding: 4px 0 4px 4px;
-  width: 98%;
+  padding: 10px 0 10px 6px;
 }
+
 .stages {
   width: 100%;
-  margin-left: 2px;
   display: flex;
   display: -webkit-flex;
 }
 
 .stage {
   padding-top: 10px;
-  width: 33%;}
+  flex-grow: 1;
+  padding-left: 6px;
+}
 
 .stage-name {
   font-size: 30px;
