@@ -1,7 +1,8 @@
 body {
-  background: cornsilk;
-  font-family: sans-serif;
-  }
+  /* background: cornsilk;*/
+ background: #ffffff;
+ font-family: sans-serif;
+}
 
 .buttons {
   width: 100%;
@@ -13,6 +14,7 @@ button {
   font-weight: bold;
   font-size: 114%;
   flex-grow: 1;
+  -webkit-flex-grow: 1;
 }
 
 .app {
@@ -31,7 +33,7 @@ button {
 
 .stage {
   padding-top: 10px;
-  flex-grow: 1;
+  -webkit-flex-grow: 1;
   padding-left: 6px;
 }
 
