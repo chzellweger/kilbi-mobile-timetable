@@ -20,13 +20,13 @@ button {
 .stages {
   width: 100%;
   margin-left: 2px;
+  display: flex;
+  display: -webkit-flex;
 }
 
 .stage {
   padding-top: 10px;
-  width: 33%;
-  float: left;
-}
+  width: 33%;}
 
 .stage-name {
   font-size: 30px;
@@ -64,16 +64,19 @@ button {
 .Main-Stage {
   background-color: #f89848;
   color: black;
+  order: 1;
 }
 
 .Haus {
   background-color: #ffffff;
   color: black;
+  order: 3;
 }
 
 .B-Stage {
   background-color: #fdc99b;
   color: black; 
+  order: 2;
 }
 
 .band {

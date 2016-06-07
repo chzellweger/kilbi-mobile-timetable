@@ -35,9 +35,9 @@ function Landscape(props) {
         items={['do','fr','sa']}
         />
         <div>
-          <div className='stages'>
+          <div className='stages-container'>
             <div className={`day-name ${props.day}`}>{literalDay}</div>
-            <div>{children}</div>
+            <div className="stages">{children}</div>
           </div>
         </div>
     </div>
