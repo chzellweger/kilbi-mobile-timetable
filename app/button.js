@@ -12,9 +12,10 @@ function Button(props) {
 
   return (
     <button
-      data-day={props.day}
+      id={props.day}
       className={`${props.day} ${props.className}`}
-      onClick={props.clicked}>
+      onClick={props.clicked}
+      >
       {literalDay}
     </button>
   );

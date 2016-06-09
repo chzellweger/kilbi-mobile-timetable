@@ -9,7 +9,7 @@ import { getDay } from './helpers'
 import Data from './new_data'
 
 export default class App extends Component {
-constructor(props){
+  constructor(props) {
     super(props);
 
     this.state = {
@@ -22,7 +22,7 @@ constructor(props){
     this.setOrientation = this.setOrientation.bind(this);
   }
 
-  componentWillMount(){
+  componentWillMount() {
     let day = getDay();
     let data = JSON.parse(Data);
 
@@ -50,21 +50,20 @@ constructor(props){
     });
   }
 
-  setOrientation(value){
+  setOrientation(value) {
     this.setState({'orientation': value});
   }
 
   setDay (e) {
-    console.log(e.target.dataset.day);
-    let day = e.target.dataset.day;
-    
+    console.log(e.target.id);
+    let day = e.target.id;
     this.setState({'day': day});
   }
 
   render () {
     let renderOrientationView;
 
-    if (this.state.orientation === 'portrait'){
+    if (this.state.orientation === 'portrait') {
       renderOrientationView = 
         <Portrait
           day={this.state.day}
