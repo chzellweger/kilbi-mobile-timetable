@@ -12,6 +12,7 @@ function Shows(props) {
     <Show
       key={key}
       showData={props.data[key]}
+      insideStage={false}
     />
   ));
 
