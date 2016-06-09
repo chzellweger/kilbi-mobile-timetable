@@ -20,20 +20,20 @@ function Landscape(props) {
   });
 
   let children = props.stages.map(key => (
-      (<Stage
-        key={key}
-        stage={key}
-        data={selected}
-        className="stage"
-      />)
+    <Stage
+      key={key}
+      stage={key}
+      data={selected}
+      className="stage"
+    />
       ));
 
   return (
     <div className="landscape">
-      (<DayChooser
+      <DayChooser
         setDay={props.setDay}
         items={['do', 'fr', 'sa']}
-      />)
+      />
       <div>
         <div className="stages-container">
           <div className={`day-name ${props.day}`}>{literalDay}</div>
