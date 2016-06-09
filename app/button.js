@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { getLiteralDay } from './helpers'
+import React from 'react';
+import { getLiteralDay } from './helpers';
 
 const propTypes = {
   className: React.PropTypes.string.isRequired,
@@ -15,7 +15,7 @@ function Button(props) {
       id={props.day}
       className={`${props.day} ${props.className}`}
       onClick={props.clicked}
-      >
+    >
       {literalDay}
     </button>
   );

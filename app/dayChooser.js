@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import Button from './button'
+import React from 'react';
+import Button from './button';
 
 const propTypes = {
   setDay: React.PropTypes.func.isRequired,
@@ -12,14 +12,14 @@ function DayChooser(props) {
     <Button
       key={key}
       day={key}
-      className='button'
+      className="button"
       clicked={clicked}
     />
   ));
 
-  return <div className="buttons">{children}</div>
+  return <div className="buttons">{children}</div>;
 }
 
 DayChooser.propTypes = propTypes;
 
-export default DayChooser
+export default DayChooser;

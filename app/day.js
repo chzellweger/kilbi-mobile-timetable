@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import Shows from './shows'
-import { getLiteralDay } from './helpers'
+import React from 'react';
+import Shows from './shows';
+import { getLiteralDay } from './helpers';
 
 const propTypes = {
   day: React.PropTypes.string.isRequired,
@@ -20,6 +20,6 @@ function Day(props) {
   );
 }
 
-Day.propTypes = propTypes
+Day.propTypes = propTypes;
 
 export default Day;

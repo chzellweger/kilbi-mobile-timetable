@@ -1,17 +1,17 @@
-import React, { Component } from 'react'
-import jsonQuery from 'json-query'
+import React from 'react';
+import jsonQuery from 'json-query';
 
-import DayChooser from './dayChooser'
-import Stage from './stage'
+import DayChooser from './dayChooser';
+import Stage from './stage';
 
-import { getLiteralDay } from './helpers'
+import { getLiteralDay } from './helpers';
 
 const propTypes = {
   day: React.PropTypes.string.isRequired,
   stages: React.PropTypes.array.isRequired,
   setDay: React.PropTypes.func.isRequired,
   data: React.PropTypes.object.isRequired
-}
+};
 
 function Landscape(props) {
   let literalDay = getLiteralDay(props.day);
@@ -20,30 +20,30 @@ function Landscape(props) {
   });
 
   let children = props.stages.map(key => (
-      <Stage 
+      (<Stage
         key={key}
         stage={key}
         data={selected}
-        className='stage'
-      />
+        className="stage"
+      />)
       ));
 
   return (
     <div className="landscape">
-      <DayChooser
+      (<DayChooser
         setDay={props.setDay}
-        items={['do','fr','sa']}
-        />
-        <div>
-          <div className='stages-container'>
-            <div className={`day-name ${props.day}`}>{literalDay}</div>
-            <div className="stages">{children}</div>
-          </div>
+        items={['do', 'fr', 'sa']}
+      />)
+      <div>
+        <div className="stages-container">
+          <div className={`day-name ${props.day}`}>{literalDay}</div>
+          <div className="stages">{children}</div>
         </div>
+      </div>
     </div>
   );
 }
 
 Landscape.propTypes = propTypes;
 
-export default Landscape
+export default Landscape;

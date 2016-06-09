@@ -1,12 +1,11 @@
-import React, { Component } from 'react'
-import { render } from 'react-dom';
+import React, { Component } from 'react';
 
-import Landscape from './landscape'
-import Portrait from './portrait'
+import Landscape from './landscape';
+import Portrait from './portrait';
 
-import { getDay } from './helpers'
+import { getDay } from './helpers';
 
-import Data from './new_data'
+import Data from './new_data';
 
 export default class App extends Component {
   constructor(props) {
@@ -23,63 +22,63 @@ export default class App extends Component {
   }
 
   componentWillMount() {
-    let day = getDay();
-    let data = JSON.parse(Data);
+    const thisDay = getDay();
+    const thisData = JSON.parse(Data);
 
     this.setState({
-      data: data,
-      day: day
-    })
+      data: thisData,
+      day: thisDay
+    });
   }
 
   componentDidMount() {
-    let mediaQueryList = window.matchMedia('(orientation: portrait)');
-    
+    const mediaQueryList = window.matchMedia('(orientation: portrait)');
+
     // If there are matches, we're in portrait
     if (mediaQueryList.matches) {
-      this.setState({orientation: 'portrait'})
+      this.setState({ orientation: 'portrait' });
     } else {
-      this.setState({orientation: 'landscape'})
+      this.setState({ orientation: 'landscape' });
     }
 
     // Add a media query change listener
-    let setter = this.setOrientation;
+    const setter = this.setOrientation;
 
     mediaQueryList.addListener((mediaQuery) => {
-      mediaQuery.matches ? setter('portrait') : setter('landscape')
+      mediaQuery.matches ? setter('portrait') : setter('landscape');
     });
   }
 
   setOrientation(value) {
-    this.setState({'orientation': value});
+    this.setState({ orientation: value });
   }
 
-  setDay (e) {
+  setDay(e) {
     console.log(e.target.id);
     let day = e.target.id;
-    this.setState({'day': day});
+    this.setState({ day: day });
   }
 
-  render () {
+  render() {
     let renderOrientationView;
 
     if (this.state.orientation === 'portrait') {
-      renderOrientationView = 
-        <Portrait
+      renderOrientationView =
+        (<Portrait
           day={this.state.day}
           setDay={this.setDay}
           data={this.state.data}
-        />
+        />);
     } else {
       renderOrientationView =
-        <Landscape 
+        (<Landscape
           day={this.state.day}
-          stages={['Main-Stage','B-Stage','Haus']}
+          stages={['Main-Stage', 'B-Stage', 'Haus']}
           setDay={this.setDay}
           data={this.state.data}
-        />
+        />);
     }
 
-    return <div className="app">{renderOrientationView}</div>
+    return <div className="app">{renderOrientationView}</div>;
   }
-};
+}
