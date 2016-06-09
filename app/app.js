@@ -45,7 +45,8 @@ export default class App extends Component {
     const setter = this.setOrientation;
 
     mediaQueryList.addListener((mediaQuery) => {
-      mediaQuery.matches ? setter('portrait') : setter('landscape');
+      const match = mediaQuery.matches ? 'portrait' : 'landscape';
+      setter(match);
     });
   }
 
@@ -55,8 +56,8 @@ export default class App extends Component {
 
   setDay(e) {
     console.log(e.target.id);
-    let day = e.target.id;
-    this.setState({ day: day });
+    const clickedDay = e.target.id;
+    this.setState({ day: clickedDay });
   }
 
   render() {

@@ -16,6 +16,8 @@
     "no-mixed-requires": [0],
     "no-underscore-dangle": [0],
     "no-var": [1],
-    "no-else-return": [0]
+    "no-else-return": [0],
+    "react/no-did-mount-set-state": [0],
+    "no-console": [0]
   }
 }
