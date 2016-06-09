@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import Show from './show'
+import React from 'react';
+import Show from './show';
 
 const propTypes = {
   day: React.PropTypes.string.isRequired,
@@ -7,15 +7,15 @@ const propTypes = {
 };
 
 function Shows(props) {
-  let keys = Object.keys(props.data);
+  const keys = Object.keys(props.data);
   let children = keys.map(key => (
-    <Show 
+    <Show
       key={key}
       showData={props.data[key]}
     />
   ));
 
-  return <div className='shows'>{children}</div>
+  return <div className="shows">{children}</div>;
 }
 
 Shows.propTypes = propTypes;

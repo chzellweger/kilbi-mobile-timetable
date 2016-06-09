@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import jsonQuery from 'json-query'
+import React from 'react';
+import jsonQuery from 'json-query';
 
-import Show from './show'
+import Show from './show';
 
 const propTypes = {
   data: React.PropTypes.object.isRequired,
@@ -9,12 +9,12 @@ const propTypes = {
 };
 
 function Stage(props) {
-  let selected = jsonQuery(`value[*stage=${props.stage}]` , {
+  const selected = jsonQuery(`value[*stage=${props.stage}]`, {
     data: props.data
   });
-  
-  let keys = Object.keys(selected.value);
-  
+
+  const keys = Object.keys(selected.value);
+
   let children = keys.map(key => (
     <Show
       key={key}
@@ -26,13 +26,13 @@ function Stage(props) {
 
   return (
     <div className={`stage ${props.stage}`} >
-      <div className='stage-name'>{props.stage}</div>
+      <div className="stage-name">{props.stage}</div>
       <div>{children}</div>
     </div>
   );
 }
 
-Stage.propTypes = propTypes
+Stage.propTypes = propTypes;
 
 export default Stage;
 

@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import jsonQuery from 'json-query'
+import React from 'react';
+import jsonQuery from 'json-query';
 
-import Day from './day'
-import DayChooser from './dayChooser'
+import Day from './day';
+import DayChooser from './dayChooser';
 
 const propTypes = {
   day: React.PropTypes.string.isRequired,
@@ -11,7 +11,7 @@ const propTypes = {
 };
 
 function Portrait(props) {
-  let selected = jsonQuery(`shows[*day=${props.day}]`, {
+  const selected = jsonQuery(`shows[*day=${props.day}]`, {
     data: props.data
   });
 
@@ -19,7 +19,7 @@ function Portrait(props) {
     <div className="portrait">
       <DayChooser
         setDay={props.setDay}
-        items={['do','fr','sa']}
+        items={['do', 'fr', 'sa']}
       />
       <Day
         day={props.day}
@@ -31,4 +31,4 @@ function Portrait(props) {
 
 Portrait.propTypes = propTypes;
 
-export default Portrait
+export default Portrait;
